@@ -1,0 +1,106 @@
+Kafka config
+cache config
+Difference between Redis and ehcache
+Usecase -> submit attendance fromUI -> write backend part by providing an endpoint
+how to write validations
+how do you handle validation exceptions
+OAuth2RestTemplate config
+how to provide security, how to implement users, roles, permisssions with OAuth2 
+What are all the design patterns you know? 
+Singleton
+factory
+what are all the microservices patterns you know?
+Zuul config
+what are solid principles
+given a list of students -  write program on java8
+	convert to map of name and age
+	list of student names who have age >21
+	list of students sort with age
+	get the avg age of students
+Reentrant lock
+producer and consumer problem with Lock class
+Executor service framework - Completable future example
+Internal implementation of hashmap
+----------------------------------------
+//output for the following
+
+public class Test {
+
+	public static void main(String[] args) {
+		Map<Student, Integer> studentMap = new HashMap<>();
+		studentMap.put(new Student("Balu", 21), 100);
+		studentMap.put(new Student("Balu", 21), 200);
+		System.out.println(studentMap.get(new Student("Balu", 21)));
+	}
+
+}
+
+class Student{
+	private String name;
+	private int age;
+	
+	public Student(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}	
+---------------------------------------------
+//Execution flow when static and instance blocks and constructors
+public class Test {
+
+	public static void main(String[] args) {
+		A a = new B();
+	}
+
+}
+
+class A{
+	static {
+		System.out.println("In A static block");
+	}
+		
+	{
+		System.out.println("In A instance block");
+	}
+	A(){
+		System.out.println("In A constructor");
+	}
+}
+
+class B extends A{
+	static {
+		System.out.println("In B static block");
+	}
+	
+	{
+		System.out.println("In B instance block");
+	}
+	B(){
+		System.out.println("In B constructor");
+	}
+}
+----------------------------------------------------
+Do you know UML and ER diagrams
+Do you know GraphQL
+how do you deploy your application
+How do you get the thread and heap dumps
+Have you ever monitor prod bugs and resolve? if yes then how?
+Database indexes
+ATDD, TDD, BDD and diff bw them
+swagger document(How testers test your REST API)
+what are the maven build phases
+what are all the logging levels
