@@ -104,3 +104,7 @@ ATDD, TDD, BDD and diff bw them
 swagger document(How testers test your REST API)
 what are the maven build phases
 what are all the logging levels
+What is serialVersionUID
+How to change the serialized object in the middle
+@Transient
+Serialization and Externalization
